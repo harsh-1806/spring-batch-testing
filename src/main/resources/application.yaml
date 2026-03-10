@@ -1,3 +1,17 @@
 spring:
   application:
     name: batch
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: root
+    password: password
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  batch:
+    job:
+      enabled: false
